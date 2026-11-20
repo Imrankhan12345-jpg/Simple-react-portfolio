@@ -1,0 +1,124 @@
+/* Poore Projects page ki styling */
+#projects-wrapper {
+    min-height: 100vh;
+    background-color: #0f172a; /* Dark theme background */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+#projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+#projects-title {
+    font-size: 38px;
+    color: #38bdf8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#projects-subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout (Automatically adjusts cards based on screen size) */
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Project Card Styling */
+.project-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #334155;
+}
+
+/* Hover effect jab mouse card ke upar aaye */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.2);
+    border-color: #38bdf8;
+}
+
+.project-card-title {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.project-card-desc {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Tech Stack Badges Container */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+/* Individual Tech Badge */
+.tech-badge {
+    background-color: #334155;
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Buttons Section */
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    flex: 1;
+}
+
+/* Live Demo Button */
+.live-btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.live-btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* GitHub Button */
+.github-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #64748b;
+}
+
+.github-btn:hover {
+    background-color: #334155;
+    border-color: #94a3b8;
+}

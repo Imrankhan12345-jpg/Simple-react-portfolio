@@ -1,0 +1,159 @@
+/* Poore Contact page ki styling */
+#contact-wrapper {
+    min-height: 100vh;
+    background-color: #0f172a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+#contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+#contact-title {
+    font-size: 38px;
+    color: #38bdf8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact-subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Two-Column Layout (Info + Form) */
+#contact-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left Side: Contact Info Box */
+#contact-info {
+    flex: 1;
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.info-heading {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.info-text {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.info-label {
+    color: #38bdf8;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    color: #e2e8f0;
+}
+
+/* Right Side: Contact Form */
+#contact-form {
+    flex: 1.5;
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+#success-message {
+    background-color: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22c55e;
+    color: #4ade80;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+#submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* Mobile Screens ke liye Responsive CSS */
+@media (max-width: 768px) {
+    #contact-content {
+        flex-direction: column;
+    }
+
+    #contact-info,
+    #contact-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
